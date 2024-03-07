@@ -6,8 +6,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.Configure<BookStoreDatabaseSettings>(
     builder.Configuration.GetSection("BookStoreDatabase"));
+builder.Services.Configure<UserDatabaseSettings>(
+    builder.Configuration.GetSection("UserDatabase"));
 
 builder.Services.AddSingleton<BooksService>();
+builder.Services.AddSingleton<UserService>();
 builder.Services.AddControllers().AddJsonOptions(
         options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
 

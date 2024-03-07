@@ -44,3 +44,4 @@
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/BookStoreApi.pdb
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/BookStoreApi.genruntimeconfig.cache
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/ref/BookStoreApi.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/BookStoreApi.sourcelink.json

@@ -1,9 +1,11 @@
 using BookStoreApi.Models;
 using BookStoreApi.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookStoreApi.Controllers;
 
+[Authorize]
 [Route("api/[controller]")]
 [ApiController]
 public class UserController : Controller
@@ -37,5 +39,20 @@ public class UserController : Controller
         await _userService.CreateAsync(newUser);
 
         return CreatedAtAction(nameof(Get), new { id = newUser.Id }, newUser);
+    }
+
+    [AllowAnonymous]
+    [Route("authenticate")]
+    [HttpPost]
+    public async Task<ActionResult> Login([FromBody] User user)
+    {
+        var token = await _userService.Authenticate(user.Email, user.Password);
+
+        if (token is null)
+        {
+            return Unauthorized();
+        }
+
+        return Ok(new {token, user});
     }
 }

@@ -45,3 +45,12 @@
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/BookStoreApi.genruntimeconfig.cache
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/ref/BookStoreApi.dll
 /Users/BDawson/Desktop/Projects/BookStoreApi/obj/Debug/net8.0/BookStoreApi.sourcelink.json
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/BDawson/Desktop/Projects/BookStoreApi/bin/Debug/net8.0/System.Security.Permissions.dll

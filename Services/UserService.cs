@@ -12,14 +12,14 @@ namespace BookStoreApi.Services;
 public class UserService
 {
     private readonly IMongoCollection<User> _users;
-    private readonly string key;
+    private readonly string? key;
 
     public UserService(IOptions<UserDatabaseSettings> userDatabaseSettings, IConfiguration configuration)
     {
         var mongoClient = new MongoClient(userDatabaseSettings.Value.ConnectionString);
         var mongoDatabase = mongoClient.GetDatabase(userDatabaseSettings.Value.DatabaseName);
         _users = mongoDatabase.GetCollection<User>(userDatabaseSettings.Value.UserCollectionName);
-        this.key = "";
+        this.key = configuration.GetSection("JwtKey").ToString();
     }
 
     public async Task<List<User>> GetAsync() => await _users.Find(user => true).ToListAsync();
